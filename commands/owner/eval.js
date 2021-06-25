@@ -8,7 +8,7 @@ module.exports = {
         accessableby: "Bot Owner",
         category: "owner",
         type: "owner",
-        usage: `${prefix}eval <input>`
+        usage: `${prefix}eval [input]`
     },
     run: async (bot, message, args) => {
     if(ownerid.includes(message.author.id)) {
