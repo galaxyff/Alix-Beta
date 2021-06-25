@@ -1,9 +1,9 @@
 {
-    "token": "Your Bot Token",
-    "prefix": "Bot Prefix",
+    "token": "Bot Token",
+    "prefix": "-",
     "report_channelid": "Channel ID Where Bug Reports Comes",
     "support_server": "Your Bots Support Server",
-    "main_ownerid": "Your Id",
+    "main_ownerid": "779985841090330624",
     "InstaToken": "Your Insta Token Here",
     "extra_ownerid": [
       "Owner 1",
