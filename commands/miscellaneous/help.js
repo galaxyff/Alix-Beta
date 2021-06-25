@@ -30,13 +30,13 @@ module.exports = {
                 const dir = bot.commands.filter(c => c.config.category === category)
                 const capitalise = category.slice(0, 1).toUpperCase() + category.slice(1)
                 try {
-                    embed.addField(`❯ ${capitalise} [${dir.size}]:`, dir.map(c => `\`${c.config.name}\``).join(" "));
+                    embed.addField(`• ${capitalise} [${dir.size}]:`, dir.map(c => `\`${c.config.name}\``).join(" "));
                 } catch(e) {
                     console.log(e)
                 }
             })
 
-            embed.addField("❯ Support Us:", `[Support Server](${support_server}) | [Bot Invite](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=8)`)
+            embed.addField("• Support Us:", `[Support Server](${support_server}) | [Bot Invite](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=8)`)
 
             return message.channel.send(embed)
         } else {
@@ -51,7 +51,7 @@ module.exports = {
             **Accessible by:** ${command.accessableby || "Members"}
             **Aliases:** ${command.aliases ? command.aliases.join(", ") : "None."}`)
 
-            embed.addField("❯ Support Us:", `[Support Server](${support_server}) | [Bot Invite](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=8)`)
+            embed.addField("• Support Us:", `[Support Server](${support_server}) | [Bot Invite](https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&permissions=8)`)
 
             return message.channel.send(embed)
         }
